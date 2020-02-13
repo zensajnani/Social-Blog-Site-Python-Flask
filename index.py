@@ -26,4 +26,4 @@ sys.path.append(PROJECT_DIR + '/src/')
 #
 #     return [bytes(output, 'utf-8')]
 
-from .htdocs import app as application
+from .app import app as application
