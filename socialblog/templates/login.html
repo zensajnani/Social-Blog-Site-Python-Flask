@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+
+<form method="POST" class="form-container">
+    <div class="row">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    <div class="col-md-6 col-sm-12">{{ form.email.label(class="form-label") }} </div>
+    <div class="col-md-6 col-sm-12">{{ form.email(class="form-control form-custom") }}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">{{ form.password.label(class="form-label") }}</div>
+        <div class="col-md-6 col-sm-12">{{ form.password(class="form-control form-custom") }}</div>
+    </div>
+    <div class="row">
+        <div class="col">{{ form.submit(class="btn btn-primary btn-block btn-custom btn-form") }}</div>
+        </div>
+</form>
+    </div>
+
+{% endblock %}

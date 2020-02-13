@@ -1,0 +1,106 @@
+
+
+a {
+    color: #0f4c75;
+}
+
+/*Navbar*/
+
+.nav-container {
+    margin: 0% 0%;
+    padding: 0%;
+}
+
+.nav-custom {
+    background-color: #1b262c;
+    padding: 8px 7%;
+}
+
+/*Button*/
+
+.btn-custom {
+    background-color: #0f4c75;
+}
+
+
+/****** INDEX PAGE *****/
+
+/*Title*/
+
+#title-section {
+    background-color: #bbe1fa;
+    padding: 2% 1%;
+    text-align: center;
+    color: #0f4c75;
+}
+
+/*Body*/
+
+.body-container {
+    background-color: #bbe1fa;
+    max-width: 100%;
+    margin: 0;
+    padding: 2% 15%;
+}
+
+.custom-card {
+    margin: 2% 0;
+}
+
+
+/***** INFO PAGE *****/
+
+#info {
+    background-color: #bbe1fa;
+    padding: 2% 1%;
+    color: #1b262c;
+}
+
+
+/***** LOG IN REGISTER *****/
+
+.form-container {
+    margin-top: 10%;
+    padding: 10% 0;
+}
+
+.form-custom {
+    margin: 2px 0 20px 0;
+}
+
+.form-label {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.btn-form {
+    margin-top: 30px;
+    background-color: #1b262c;
+}
+
+.btn-form:hover {
+    background-color: #0f4c75;
+}
+
+/***** CREATE POST *****/
+
+.create-post-container {
+    margin: 4% auto;
+}
+
+
+/***** ACCOUNT *****/
+
+.account-container {
+    background-color: #bbe1fa;
+    color: #0f4c75;
+    padding: 3%;
+}
+
+.profile-pic {
+    margin: 10px auto;
+}
+
+.account-form-container {
+    margin: 15px auto;
+}

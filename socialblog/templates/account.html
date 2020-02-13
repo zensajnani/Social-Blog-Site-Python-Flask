@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="account-container">
+  <div align='center'>
+    <h1 >Welcome to the page for {{current_user.username}}</h1>
+    <img class="profile-pic" align='center' src="{{ url_for('static', filename='profile_pics/' + current_user.profile_image) }}">
+    <p>{{ current_user.email }}</p>
+  </div>
+</div>
+<div class="container account-form-container">
+  <form  method="POST" action = "" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    <div class="row">
+        <div class="col-md-6 col-sm-12">{{ form.username.label(class="form-label") }}</div>
+        <div class="col-md-6 col-sm-12">{{form.username(class="form-control form-custom")  }}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">{{ form.email.label(class="form-label") }}</div>
+        <div class="col-md-6 col-sm-12">{{form.email(class="form-control form-custom")  }}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">{{ form.picture.label(class="form-label") }}</div>
+        <div class="col-md-6 col-sm-12">{{ form.picture(class="form-control-file form-custom") }}</div>
+    </div>
+    <div class="row">
+        <div class="col">{{ form.submit(class="btn btn-primary btn-block btn-custom btn-form") }}</div>
+    </div>
+  </form>
+
+</div>
+
+{% endblock content %}
